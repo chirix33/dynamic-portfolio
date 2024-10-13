@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lumanosimo', sursive;
+}
+
+nav li {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav li:hover {
+    background-color: #458985;
+    color: #ededd8;
+}
+
+nav li.active {
+    background-color: #70061F;
+    color: #ededd8;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+}
+
+/* Color Theme Swatches in Hex */
+.evil-forces { color: #70061F; }
+.royal-palm { color: #458985; }
+.cream-cheese { color: #D7D6A5; }
+.sweet-cashew { color: #DBA67B; }
+.tuscan-clay { color: #A55C55; }
+
+/* Fonts */
+.lumanosimo-regular {
+    font-family: "Lumanosimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
