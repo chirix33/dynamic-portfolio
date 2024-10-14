@@ -7,7 +7,10 @@
 }
 
 body {
-    font-family: 'Lumanosimo', sursive;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 nav li {
@@ -29,8 +32,10 @@ nav li.active {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300px;
+    min-height: 400px;
     width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 /* Color Theme Swatches in Hex */
@@ -68,23 +73,5 @@ nav li.active {
 .courier-prime-bold-italic {
     font-family: "Courier Prime", monospace;
     font-weight: 700;
-    font-style: italic;
-}
-  
-.libre-baskerville-regular {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.libre-baskerville-bold {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
     font-style: italic;
 }
