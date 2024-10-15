@@ -690,6 +690,10 @@ video {
   max-width: 100%;
 }
 
+.max-w-24 {
+  max-width: 6rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -794,6 +798,10 @@ video {
   white-space: nowrap;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .\!rounded-full {
   border-radius: 9999px !important;
 }
@@ -866,6 +874,10 @@ video {
 
 .to-cream-cheese-300 {
   --tw-gradient-to: #c7c382 var(--tw-gradient-to-position);
+}
+
+.to-cream-cheese-200 {
+  --tw-gradient-to: #d7d6a5 var(--tw-gradient-to-position);
 }
 
 .object-cover {
@@ -1197,6 +1209,10 @@ nav li.active {
 
   .lg\:w-2\/4 {
     width: 50%;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:basis-1\/4 {
