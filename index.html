@@ -90,165 +90,271 @@
         <input type="text" placeholder="Search" class="basis-full w-full lg:basis-1/4 outline-none block border-2 border-royal-palm-500 rounded-md pl-6 py-2 text-sm">
       </div>
       <div class="grow w-full flex flex-col justify-center items-center gap-6">
-        
         <!-- Table -->
+        <div class="p-6 overflow-auto w-full px-0">
+          <table class="mt-4 w-full min-w-max table-auto text-left">
+            <thead>
+              <tr>
+                <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                    <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">
+                      Project
+                    </p>
+                </th>
+                <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                  <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">Description
+                  </p>
+                </th>
+                <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                  <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">
+                    Tech Stack/Tools
+                  </p>
+                </th>
+                <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                  <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">Status 
+                  </p>
+                </th>
+                <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
+                  <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">View</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex items-center gap-3">
+                    <div class="flex gap-3 items-center justify-center">
+                      <img src="src/data/images/pokeapi.png" alt="Pokébook" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
+                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Pokébook</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="max-w-24 lg:max-w-full whitespace-wrap">
+                    <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
+                      View & Search for pokemons. Customized Theme.
+                    </p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex flex-col">
+                    <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">CSS, ReactJS, Axios, localStorage</p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="w-max">
+                    <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
+                      <span class="">Completed</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+                    <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                      </svg>              
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex items-center gap-3">
+                    <div class="flex gap-3 items-center justify-center">
+                      <img src="src/data/images/recipeshare.ico" alt="RecipeShare" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
+                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">RecipeShare</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="max-w-24 lg:max-w-full whitespace-wrap">
+                    <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
+                      Submit & View recipes from other users.
+                    </p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex flex-col">
+                    <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, NextAuth</p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="w-max">
+                    <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
+                      <span class="">active</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+                    <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                      </svg>              
+                    </span>
+                  </button>
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex items-center gap-3">
+                    <div class="flex gap-3 items-center justify-center">
+                      <img src="src/data/images/votingapp.jpg" alt="Voting App" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
+                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Voting Web App</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="max-w-24 lg:max-w-full whitespace-wrap">
+                    <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
+                      Vote & Manage elections. Reports are generated. 
+                    </p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex flex-col">
+                    <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Bootstrap, jQuery, FPDF, PHP</p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="w-max">
+                    <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
+                      <span class="">Completed</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+                    <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                      </svg>              
+                    </span>
+                  </button>
+                </td>
+              </tr>
 
-        <!-- component -->
-<div class="p-6 overflow-auto w-full px-0">
-  <table class="mt-4 w-full min-w-max table-auto text-left">
-    <thead>
-      <tr>
-        <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
-            <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">
-              Project
-            </p>
-        </th>
-        <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
-          <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">Description
-          </p>
-        </th>
-        <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
-          <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">
-            Tech Stack/Tools
-          </p>
-        </th>
-        <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
-          <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">Status 
-          </p>
-        </th>
-        <th class="cursor-pointer border-y border-blue-gray-100 bg-blue-gray-50/50 p-4 transition-colors hover:bg-blue-gray-50">
-          <p class="antialiased text-sm text-blue-gray-900 flex items-center justify-between gap-2 font-normal leading-none opacity-70">View</p>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex items-center gap-3">
-            <div class="flex gap-3 items-center justify-center">
-              <img src="src/data/images/pokeapi.png" alt="Pokébook" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-              <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Pokébook</p>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="max-w-24 lg:max-w-full whitespace-wrap">
-            <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-              Display all Pokemons and allow users to view and search easily.
-            </p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex flex-col">
-            <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">CSS, ReactJS, Axios, localStorage</p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="w-max">
-            <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-              <span class="">Completed</span>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4">
-                <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"></path>
-              </svg>
-            </span>
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex items-center gap-3">
-            <div class="flex gap-3 items-center justify-center">
-              <img src="src/data/images/icon.ico" alt="Pokébook" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-              <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">RecipeShare</p>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="max-w-24 lg:max-w-full whitespace-wrap">
-            <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-              Submit and View recipes from other users.
-            </p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex flex-col">
-            <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, GoogleOAuth</p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="w-max">
-            <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-              <span class="">active</span>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4">
-                <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"></path>
-              </svg>
-            </span>
-          </button>
-        </td>
-      </tr>
-      
-      <tr>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex items-center gap-3">
-            <div class="flex gap-3 items-center justify-center">
-              <img src="src/data/images/icon.ico" alt="Pokébook" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-              <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">RecipeShare</p>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="max-w-24 lg:max-w-full whitespace-wrap">
-            <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-              Submit and View recipes from other users.
-            </p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="flex flex-col">
-            <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, GoogleOAuth</p>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <div class="w-max">
-            <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-              <span class="">active</span>
-            </div>
-          </div>
-        </td>
-        <td class="p-4 border-b border-blue-gray-50">
-          <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4">
-                <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z"></path>
-              </svg>
-            </span>
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+              <tr>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex items-center gap-3">
+                    <div class="flex gap-3 items-center justify-center">
+                      <img src="src/data/images/knowords.jpg" alt="Knowords" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
+                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Knowords</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="max-w-24 lg:max-w-full whitespace-wrap">
+                    <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
+                      English Lexical App 
+                    </p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex flex-col">
+                    <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">CSS, EJS, jQuery, Axios, NodeJS</p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="w-max">
+                    <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
+                      <span class="">Completed</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+                    <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                      </svg>              
+                    </span>
+                  </button>
+                </td>
+              </tr>
 
+              <tr>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex items-center gap-3">
+                    <div class="flex gap-3 items-center justify-center">
+                      <img src="src/data/images/perfume.png" alt="Shopping Site" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
+                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Perfume Shopping Site</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="max-w-24 lg:max-w-full whitespace-wrap">
+                    <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
+                      A perfume shopping site 
+                    </p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="flex flex-col">
+                    <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, NextAuth</p>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <div class="w-max">
+                    <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
+                      <span class="">active</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 border-b border-blue-gray-50">
+                  <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+                    <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
+                        <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
+                      </svg>              
+                    </span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <!-- End Table -->
-
-
       </div>
     </section>
 
-    <!-- Footer -->
-     <footer></footer>
+    <!-- Parallax Background Image -->
+    <div class="parallax" style="background-image: url('src/public/background_3.jpg');"></div>
+
+    <!-- Footer Section -->
+    <section>
+      <footer class="min-h-40">
+        <section class="px-8 lg:px-20 py-8">
+          <div class="flex justify-between items-center w-full my-8">
+            <div>
+              <h4 class="text-2xl">Get In Touch</h4>
+              <p class="text-sm">chiriashraf@gmail.com</p>
+            </div>
+            <ul class="list-style-none pl-0 flex flex-col gap-2">
+              <a class="flex items-center" href="https://www.linkedin.com/chirix33">
+                LinkedIn
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" style="width:16px;margin-left:4px;transform:translateY(1px)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor"></path></svg>
+              </a>
+              <a class="flex items-center" href="https://www.github.com/chirix33">
+                GitHub
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 15 15" style="width:16px;margin-left:4px;transform:translateY(1px)" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor"></path></svg>
+              </a>
+            </ul>
+          </div>
+          <br />
+          <div class="flex justify-between items-center w-full mt-8">
+            <p>Copyright &copy; 2024</p>
+            <p>Made at <a href="https://www.iit.edu">Illinois Tech</a> 🖤</p>
+          </div>
+        </section>
+      </footer>
+    </section>
   </main>
 </body>
 </html>

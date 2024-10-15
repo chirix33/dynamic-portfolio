@@ -580,6 +580,11 @@ video {
   margin-right: auto;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -596,8 +601,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -624,6 +633,11 @@ video {
   display: none;
 }
 
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -634,10 +648,6 @@ video {
 
 .h-36 {
   height: 9rem;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .h-9 {
@@ -652,16 +662,20 @@ video {
   min-height: 10rem;
 }
 
+.min-h-44 {
+  min-height: 11rem;
+}
+
+.min-h-36 {
+  min-height: 9rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
 
 .w-36 {
   width: 9rem;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-9 {
@@ -682,16 +696,16 @@ video {
   min-width: max-content;
 }
 
+.max-w-24 {
+  max-width: 6rem;
+}
+
 .max-w-\[40px\] {
   max-width: 40px;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-24 {
-  max-width: 6rem;
 }
 
 .grow {
@@ -766,6 +780,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -796,10 +814,6 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
-}
-
-.text-wrap {
-  text-wrap: wrap;
 }
 
 .\!rounded-full {
@@ -870,10 +884,6 @@ video {
   --tw-gradient-from: #ededd8 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(237 237 216 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-cream-cheese-300 {
-  --tw-gradient-to: #c7c382 var(--tw-gradient-to-position);
 }
 
 .to-cream-cheese-200 {
@@ -950,6 +960,10 @@ video {
   padding-left: 1.5rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -962,18 +976,9 @@ video {
   vertical-align: middle;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -1199,16 +1204,16 @@ nav li.active {
     height: 15rem;
   }
 
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-
-  .lg\:w-auto {
-    width: auto;
+  .lg\:min-h-44 {
+    min-height: 11rem;
   }
 
   .lg\:w-2\/4 {
     width: 50%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
   }
 
   .lg\:max-w-full {
