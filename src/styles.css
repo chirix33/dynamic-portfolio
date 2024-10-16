@@ -601,10 +601,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -615,6 +611,10 @@ video {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -660,14 +660,6 @@ video {
 
 .min-h-40 {
   min-height: 10rem;
-}
-
-.min-h-44 {
-  min-height: 11rem;
-}
-
-.min-h-36 {
-  min-height: 9rem;
 }
 
 .w-10 {
@@ -778,10 +770,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-2 {
@@ -956,12 +944,12 @@ video {
   padding-bottom: 1px;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pl-0 {
   padding-left: 0px;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .text-left {
@@ -1085,6 +1073,14 @@ video {
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #70061F;
+  --color-secondary: #458985;
+  --color-tertiary: #D7D6A5;
+  --color-quaternary: #DBA67B;
+  --color-quinary: #A55C55;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -1104,6 +1100,25 @@ nav li:hover {
 nav li.active {
   background-color: #70061F;
   color: #ededd8;
+}
+
+nav > ul {
+  transition: .3s;
+}
+
+ul.scrolled {
+  position: fixed;
+  margin: auto;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 7rem;
+  padding: 10px;
+  border: 1px solid #458985;
+  z-index: 2;
+  font-size: 14px;
+  gap: 8px;
 }
 
 .parallax {
@@ -1159,18 +1174,6 @@ nav li.active {
   font-style: normal;
 }
 
-.courier-prime-regular-italic {
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.courier-prime-bold-italic {
-  font-family: "Courier Prime", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .hover\:shadow-md:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1202,10 +1205,6 @@ nav li.active {
 
   .lg\:h-60 {
     height: 15rem;
-  }
-
-  .lg\:min-h-44 {
-    min-height: 11rem;
   }
 
   .lg\:w-2\/4 {
