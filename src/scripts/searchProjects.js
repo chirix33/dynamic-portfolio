@@ -61,7 +61,7 @@ function populateProjects(filteredProjects) {
 
 async function searchProjects() {
   const searchInput = document.getElementById("search");
-  const projects = await getContent("/src/data/projects.json");
+  const projects = await getContent("src/data/projects.json");
 
   searchInput.addEventListener("input", () => {
     const searchValue = searchInput.value.toLowerCase();

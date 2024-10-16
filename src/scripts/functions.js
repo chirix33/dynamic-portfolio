@@ -29,7 +29,7 @@ export async function injectExperience() {
     const experienceCardsClasses = ["experience-card", "cursor-pointer", "hover:shadow-md", "p-8", "rounded-lg", "w-full", "text-slate-800", "bg-gradient-to-r", "from-cream-cheese-100", "to-cream-cheese-200"];
     
     // Grab experience.json data
-    const experiences = await getContent("/src/data/experience.json");
+    const experiences = await getContent("src/data/experience.json");
 
     experiences.experiences.map(experience => {
         const card = document.createElement('div');
@@ -50,7 +50,7 @@ export async function injectProjects() {
     const projectsTableBody = document.querySelector("#projects_body");
 
     // Grab projects.json data
-    const projects = await getContent("/src/data/projects.json");
+    const projects = await getContent("src/data/projects.json");
 
     if (!projects.projects || projects.projects.length === 0) {
         const noProjects = document.createElement('p');
