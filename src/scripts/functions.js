@@ -112,7 +112,7 @@ export async function injectProjects() {
 
 export async function injectContactEmail() {
     const contactEmail = document.querySelector("#contact_email");
-    const email = await getContent("/src/data/email.json");
+    const email = await getContent("src/data/email.json");
     const p = document.createElement("p");
     p.classList.add("text-sm");
     p.innerHTML = email.email;
