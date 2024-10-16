@@ -11,6 +11,17 @@
     <link rel="shortcut icon" href="src/public/favicon.ico" type="image/x-icon">
   </head>
   <body class="antialiased bg-cream-cheese-50 max-w-full overflow-x-hidden">
+    <!-- Project Detail Modal -->
+    <div class="hidden fixed w-full h-dvh z-10 bg-royal-palm-100">
+      <div class="flex flex-col gap-6 px-8 lg:px-20 py-8">
+        <p>Image</p>
+        <h3>Project Name</h3>
+        <hr />
+        <p>Full Description</p>
+      </div>
+    </div>
+    <!-- End Project Detail Modal -->
+
     <header class="px-8 lg:px-20 py-8">
       <nav class="flex justify-between items-center p-4 h-24">
         <h2 class="text-xl lg:text-3xl courier-prime-bold">&lt;Ashraf. <span class="text-royal-palm-500 font-bold">/</span>&gt;</h2>
@@ -40,57 +51,28 @@
       </section>
     
       <!-- Parallax Background Image -->
-      <div class="parallax" style="background-image: url('src/public/background_1.jpg');"></div>
+      <div class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_1.jpg');"></div>
     
       <!-- Experience Section -->
       <section id="experience" class="px-8 lg:px-20 py-8 flex flex-col mx-auto gap-4 justify-center items-start min-h-40 mt-6 mb-6">
         <h2 class="lumanosimo-regular text-2xl">Experience</h2>
-        <div class="grow w-full lg:w-2/4 mt-4 mx-auto flex flex-col justify-center items-center gap-6">
-          
-          <!-- Experience Cards -->
-          <div class="experience-card cursor-pointer hover:shadow-md p-8 rounded-lg w-full text-slate-800 bg-gradient-to-r from-cream-cheese-100 to-cream-cheese-200">
-            <div class="flex justify-between items-center">
-              <h3 class="text-lg">Onesolution</h3>
-              <span class="date text-gray-800 text-sm">Sep 2023 - Aug 2024</span>
-            </div>
-            <p class="font-bold">Full Stack Developer</p>
-          </div>
-
-
-          <div class="experience-card cursor-pointer hover:shadow-md p-8 rounded-lg w-full text-slate-800 bg-gradient-to-r from-cream-cheese-100 to-cream-cheese-200">
-            <div class="flex justify-between items-center">
-              <h3 class="text-lg">Global Institute of Islamic Banking</h3>
-              <span class="date text-gray-800 text-sm">Jun 2022 - Jul 2024</span>
-            </div>
-            <p class="font-bold">Web Developer</p>
-          </div>
-
-
-          <div class="experience-card cursor-pointer hover:shadow-md p-8 rounded-lg w-full text-slate-800 bg-gradient-to-r from-cream-cheese-100 to-cream-cheese-200">
-            <div class="flex justify-between items-center">
-              <h3 class="text-lg">Kwame Nkrumah University</h3>
-              <span class="date text-gray-800 text-sm">Sep 2022 - Aug 2023</span>
-            </div>
-            <p class="font-bold">Junior Backend Developer</p>
-          </div>
-          <!-- End Experience Cards -->
-
-
+        <div id="experience_cards" class="grow w-full lg:w-2/4 mt-4 mx-auto flex flex-col justify-center items-center gap-6">
+          <!-- Experience Cards s-->
         </div>
       </section>
 
       <!-- Parallax Background Image -->
-      <div class="parallax" style="background-image: url('src/public/background_2.jpg');"></div>
+      <div class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_2.jpg');"></div>
 
       <!-- Projects Section -->
       <section id="projects" class="px-8 lg:px-20 py-8 flex flex-col mx-auto gap-4 justify-center items-start min-h-40 mt-6 mb-6">
         <div class="w-full flex justify-center items-center gap-4 flex-col lg:flex-row lg:justify-between lg:gap-0">
           <h2 class="lumanosimo-regular text-2xl">Projects</h2>
-          <input type="text" placeholder="Search" class="basis-full w-full lg:basis-1/4 outline-none block border-2 border-royal-palm-500 rounded-md pl-6 py-2 text-sm">
+          <input id="search" type="text" placeholder="Search by any Tech Stack" class="basis-full w-full lg:basis-1/4 outline-none block border-2 border-royal-palm-500 rounded-md pl-6 py-2 text-sm">
         </div>
         <div class="grow w-full flex flex-col justify-center items-center gap-6">
           <!-- Table -->
-          <div class="p-6 overflow-auto w-full px-0">
+          <div id="projects_table" class="p-6 overflow-auto w-full px-0">
             <table class="mt-4 w-full min-w-max table-auto text-left">
               <thead>
                 <tr>
@@ -117,205 +99,8 @@
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <div class="flex gap-3 items-center justify-center">
-                        <img src="src/data/images/pokeapi.png" alt="Pokébook" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-                        <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Pokébook</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="max-w-24 lg:max-w-full whitespace-wrap">
-                      <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-                        View & Search for pokemons. Customized Theme.
-                      </p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex flex-col">
-                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">CSS, ReactJS, Axios, localStorage</p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="w-max">
-                      <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-                        <span class="">Completed</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-                      <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                        </svg>              
-                      </span>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <div class="flex gap-3 items-center justify-center">
-                        <img src="src/data/images/recipeshare.ico" alt="RecipeShare" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-                        <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">RecipeShare</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="max-w-24 lg:max-w-full whitespace-wrap">
-                      <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-                        Submit & View recipes from other users.
-                      </p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex flex-col">
-                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, NextAuth</p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="w-max">
-                      <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-                        <span class="">active</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-                      <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                        </svg>              
-                      </span>
-                    </button>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <div class="flex gap-3 items-center justify-center">
-                        <img src="src/data/images/votingapp.jpg" alt="Voting App" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-                        <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Voting Web App</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="max-w-24 lg:max-w-full whitespace-wrap">
-                      <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-                        Vote & Manage elections. Reports are generated. 
-                      </p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex flex-col">
-                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Bootstrap, jQuery, FPDF, PHP</p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="w-max">
-                      <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-                        <span class="">Completed</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-                      <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                        </svg>              
-                      </span>
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <div class="flex gap-3 items-center justify-center">
-                        <img src="src/data/images/knowords.jpg" alt="Knowords" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-                        <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Knowords</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="max-w-24 lg:max-w-full whitespace-wrap">
-                      <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-                        English Lexical App 
-                      </p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex flex-col">
-                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">CSS, EJS, jQuery, Axios, NodeJS</p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="w-max">
-                      <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-green-500/20 text-green-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-                        <span class="">Completed</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-                      <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                        </svg>              
-                      </span>
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <div class="flex gap-3 items-center justify-center">
-                        <img src="src/data/images/perfume.png" alt="Shopping Site" class="inline-block relative object-cover object-center !rounded-full w-9 h-9 rounded-md">            
-                        <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Perfume Shopping Site</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="max-w-24 lg:max-w-full whitespace-wrap">
-                      <p class="antialiased text-sm leading-normal text-blue-gray-900 font-normal">
-                        A perfume shopping site 
-                      </p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex flex-col">
-                      <p class="block antialiased  text-sm leading-normal text-blue-gray-900 font-normal">Tailwind, NextJS, NextAuth</p>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="w-max">
-                      <div class="relative grid items-center  font-bold uppercase whitespace-nowrap select-none bg-purple-500/20 text-purple-600 py-1 px-2 text-xs rounded-md" style="opacity: 1;">
-                        <span class="">active</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <button class="relative align-middle select-none  font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-                      <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
-                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                        </svg>              
-                      </span>
-                    </button>
-                  </td>
-                </tr>
+              <tbody id="projects_body">
+                <!-- Projects Rows -->
               </tbody>
             </table>
           </div>
@@ -324,16 +109,15 @@
       </section>
 
       <!-- Parallax Background Image -->
-      <div class="parallax" style="background-image: url('src/public/background_3.jpg');"></div>
+      <div class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_3.jpg');"></div>
 
       <!-- Footer Section -->
       <section>
         <footer class="min-h-40">
           <section class="px-8 lg:px-20 py-8">
             <div class="flex justify-between items-center w-full my-8">
-              <div>
+              <div id="contact_email">
                 <h4 class="text-2xl">Get In Touch</h4>
-                <p class="text-sm">chiriashraf@gmail.com</p>
               </div>
               <ul class="list-style-none pl-0 flex flex-col gap-2">
                 <a class="flex items-center" href="https://www.linkedin.com/chirix33">
@@ -349,12 +133,14 @@
             <br />
             <div class="flex justify-between items-center w-full mt-8">
               <p>Copyright &copy; 2024</p>
-              <p>Made at <a href="https://www.iit.edu">Illinois Tech</a> 🖤</p>
+              <p><a href="https://www.iit.edu">Made at Illinois Tech</a> 🖤</p>
             </div>
           </section>
         </footer>
       </section>
     </main>
-    <script src="src/scripts/script.js" type="module"></script>
+    <script src="src/scripts/contentLoader.js" type="module"></script>
+    <script src="src/scripts/searchProjects.js" type="module"></script>
+    <script src="src/scripts/menuScrollObserver.js" type="module"></script>
   </body>
 </html>

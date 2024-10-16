@@ -554,6 +554,14 @@ video {
   display: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -568,6 +576,10 @@ video {
 
 .top-1\/2 {
   top: 50%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-4 {
@@ -593,6 +605,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -603,6 +619,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
 }
 
 .block {
@@ -654,12 +674,24 @@ video {
   height: 2.25rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-dvh {
+  height: 100dvh;
+}
+
 .max-h-\[40px\] {
   max-height: 40px;
 }
 
 .min-h-40 {
   min-height: 10rem;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .w-10 {
@@ -864,6 +896,11 @@ video {
   background-color: rgb(168 85 247 / 0.2);
 }
 
+.bg-royal-palm-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 237 234 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -876,6 +913,18 @@ video {
 
 .to-cream-cheese-200 {
   --tw-gradient-to: #d7d6a5 var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -1043,6 +1092,16 @@ video {
   color: rgb(165 92 85 / var(--tw-text-opacity));
 }
 
+.text-royal-palm-100 {
+  --tw-text-opacity: 1;
+  color: rgb(218 237 234 / var(--tw-text-opacity));
+}
+
+.text-royal-palm-600 {
+  --tw-text-opacity: 1;
+  color: rgb(53 108 106 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1055,6 +1114,10 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-all {
@@ -1245,6 +1308,10 @@ ul.scrolled {
 
   .lg\:border-4 {
     border-width: 4px;
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:object-contain {

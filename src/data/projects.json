@@ -3,8 +3,8 @@
       {
         "name": "Pokébook",
         "description": "View & Search for pokemons. Customized Theme.",
-        "tech_stack": ["CSS", "ReactJS", "Axios", "localStorage"],
-        "status": "Completed",
+        "tech_stack": ["CSS", "JavaScript: ReactJS", "Axios", "localStorage"],
+        "status": "completed",
         "more_information": "A web application that allows users to explore information about different Pokémon, with a custom UI theme.",
         "full_picture": "src/data/images/pokeapi.png",
         "icon": "src/data/images/pokeapi.png"
@@ -12,8 +12,8 @@
       {
         "name": "RecipeShare",
         "description": "Submit & View recipes from other users.",
-        "tech_stack": ["Tailwind", "NextJS", "NextAuth"],
-        "status": "Active",
+        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
+        "status": "active",
         "more_information": "A platform for users to share and discover new recipes, featuring user authentication.",
         "full_picture": "src/data/images/recipeshare.ico",
         "icon": "src/data/images/recipeshare.ico"
@@ -21,8 +21,8 @@
       {
         "name": "Voting Web App",
         "description": "Vote & Manage elections. Reports are generated.",
-        "tech_stack": ["Bootstrap", "jQuery", "FPDF", "PHP"],
-        "status": "Completed",
+        "tech_stack": ["HTML", "Bootstrap", "JavaScript: jQuery", "FPDF", "PHP"],
+        "status": "completed",
         "more_information": "A web app for managing elections, allowing users to vote and generate result reports.",
         "full_picture": "src/data/images/votingapp.jpg",
         "icon": "src/data/images/votingapp.jpg"
@@ -30,8 +30,8 @@
       {
         "name": "Knowords",
         "description": "English Lexical App",
-        "tech_stack": ["CSS", "EJS", "jQuery", "Axios", "NodeJS"],
-        "status": "Completed",
+        "tech_stack": ["CSS", "EJS", "JavaScript: jQuery", "Axios", "NodeJS"],
+        "status": "completed",
         "more_information": "An English lexical application that helps users improve their vocabulary through interactive learning.",
         "full_picture": "src/data/images/knowords.jpg",
         "icon": "src/data/images/knowords.jpg"
@@ -39,8 +39,8 @@
       {
         "name": "Perfume Shopping Site",
         "description": "A perfume shopping site",
-        "tech_stack": ["Tailwind", "NextJS", "NextAuth"],
-        "status": "Active",
+        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
+        "status": "active",
         "more_information": "A modern e-commerce website dedicated to selling perfumes, featuring user authentication.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "src/data/images/perfume.png"
