@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -68,9 +65,9 @@ ul.scrolled {
 .tuscan-clay { color: #A55C55; }
 
 /* Fonts */
-.lumanosimo-regular {
-    font-family: "Lumanosimo", cursive;
-    font-weight: 400;
+.bodoni-moda-regular {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
     font-style: normal;
 }
 
