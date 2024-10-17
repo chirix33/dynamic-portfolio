@@ -6,6 +6,14 @@ export async function getContent (path) {
     });
 }
 
+function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    } else {
+      return false;
+    }
+}
+
 export function observeScrollForMenu () {
     const criteria = document.querySelector("header");
     const target = document.querySelector("#menu");

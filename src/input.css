@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -25,18 +28,13 @@ nav li {
     transition: background-color 0.3s, color 0.3s;
 }
 
-nav li:hover {
-    background-color: #458985;
-    color: #ededd8;
-}
-
 nav li.active {
     background-color: #70061F;
     color: #ededd8;
 }
 
 nav > ul {
-    transition: .3s;
+    transition: .1s;
 }
 
 ul.scrolled {
@@ -54,15 +52,12 @@ ul.scrolled {
     gap: 8px;
 }
 
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 400px;
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.hamburger {
+    position: fixed;
+    right: 6rem;
+    z-index: 2;
+    width: 2rem;
+    cursor: pointer;
 }
 
 /* Color Theme Swatches in Hex */

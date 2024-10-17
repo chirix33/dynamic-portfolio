@@ -554,10 +554,6 @@ video {
   display: none;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .fixed {
   position: fixed;
 }
@@ -672,10 +668,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-dvh {
@@ -959,9 +951,9 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-8 {
@@ -1082,6 +1074,11 @@ video {
   color: rgb(69 137 133 / var(--tw-text-opacity));
 }
 
+.text-royal-palm-600 {
+  --tw-text-opacity: 1;
+  color: rgb(53 108 106 / var(--tw-text-opacity));
+}
+
 .text-slate-800 {
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
@@ -1090,16 +1087,6 @@ video {
 .text-tuscan-clay {
   --tw-text-opacity: 1;
   color: rgb(165 92 85 / var(--tw-text-opacity));
-}
-
-.text-royal-palm-100 {
-  --tw-text-opacity: 1;
-  color: rgb(218 237 234 / var(--tw-text-opacity));
-}
-
-.text-royal-palm-600 {
-  --tw-text-opacity: 1;
-  color: rgb(53 108 106 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1155,18 +1142,13 @@ nav li {
   transition: background-color 0.3s, color 0.3s;
 }
 
-nav li:hover {
-  background-color: #458985;
-  color: #ededd8;
-}
-
 nav li.active {
   background-color: #70061F;
   color: #ededd8;
 }
 
 nav > ul {
-  transition: .3s;
+  transition: .1s;
 }
 
 ul.scrolled {
@@ -1184,15 +1166,12 @@ ul.scrolled {
   gap: 8px;
 }
 
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+.hamburger {
+  position: fixed;
+  right: 6rem;
+  z-index: 2;
+  width: 2rem;
+  cursor: pointer;
 }
 
 /* Color Theme Swatches in Hex */
@@ -1258,12 +1237,16 @@ ul.scrolled {
 }
 
 @media (min-width: 1024px) {
+  .lg\:invisible {
+    visibility: hidden;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .lg\:flex {
-    display: flex;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:h-60 {
@@ -1324,6 +1307,11 @@ ul.scrolled {
     padding-right: 5rem;
   }
 
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1336,5 +1324,20 @@ ul.scrolled {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:hover\:bg-royal-palm-500:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(69 137 133 / var(--tw-bg-opacity));
+  }
+
+  .lg\:hover\:text-cream-cheese-100:hover {
+    --tw-text-opacity: 1;
+    color: rgb(237 237 216 / var(--tw-text-opacity));
   }
 }
