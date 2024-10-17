@@ -7,7 +7,8 @@
         "status": "completed",
         "more_information": "A web application that allows users to explore information about different Pokémon, with a custom UI theme.",
         "full_picture": "src/data/images/pokeapi.png",
-        "icon": "src/data/images/pokeapi.png"
+        "icon": "src/data/images/pokeapi.png",
+        "link": "https://funny-baklava-823a63.netlify.app/"
       },
       {
         "name": "RecipeShare",
@@ -16,7 +17,8 @@
         "status": "active",
         "more_information": "A platform for users to share and discover new recipes, featuring user authentication.",
         "full_picture": "src/data/images/recipeshare.ico",
-        "icon": "src/data/images/recipeshare.ico"
+        "icon": "src/data/images/recipeshare.ico",
+        "link": "https://recipe-share-app.vercel.app/"
       },
       {
         "name": "Voting Web App",
@@ -25,7 +27,8 @@
         "status": "completed",
         "more_information": "A web app for managing elections, allowing users to vote and generate result reports.",
         "full_picture": "src/data/images/votingapp.jpg",
-        "icon": "src/data/images/votingapp.jpg"
+        "icon": "src/data/images/votingapp.jpg",
+        "link": "http://voting.byethost33.com/"
       },
       {
         "name": "Knowords",
@@ -34,7 +37,8 @@
         "status": "completed",
         "more_information": "An English lexical application that helps users improve their vocabulary through interactive learning.",
         "full_picture": "src/data/images/knowords.jpg",
-        "icon": "src/data/images/knowords.jpg"
+        "icon": "src/data/images/knowords.jpg",
+        "link": "https://knowords.onrender.com/"
       },
       {
         "name": "Perfume Shopping Site",
@@ -43,7 +47,8 @@
         "status": "active",
         "more_information": "A modern e-commerce website dedicated to selling perfumes, featuring user authentication.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/perfume.png"
+        "icon": "src/data/images/perfume.png",
+        "link": "https://my-app-sooty-three.vercel.app/"
       }
     ]
 }  
