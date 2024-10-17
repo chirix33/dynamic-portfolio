@@ -43,14 +43,14 @@ function populateProjects(filteredProjects) {
             </div>
             </td>
             <td class="p-4 border-b border-blue-gray-50">
-            <button data-project="${project.name}" class="view-project relative align-middle select-none text-royal-palm-600 font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+            <a href="${project.link}" data-project="${project.name}" class="flex view-project relative align-middle select-none text-royal-palm-600 font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
                 <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
                     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                     <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
                 </svg>              
                 </span>
-            </button>
+            </a>
             </td>
         `;
         fragment.appendChild(row);

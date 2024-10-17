@@ -94,7 +94,7 @@ export async function injectProjects() {
             </div>
             </td>
             <td class="p-4 border-b border-blue-gray-50">
-            <a href="${project.link}" target="_blank" data-project="${project.name}" class="view-project relative align-middle select-none text-royal-palm-600 font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+            <a href="${project.link}" target="_blank" data-project="${project.name}" class="flex view-project relative align-middle select-none text-royal-palm-600 font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
                 <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
                     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
