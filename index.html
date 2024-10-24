@@ -65,7 +65,7 @@
       </section>
     
       <!-- Parallax Background Image -->
-      <div role="image" aria-label="Background with abstract design" class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_1.jpg');"></div>
+      <div role="image" aria-label="Background with abstract design" class="parallax lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]"></div>
     
       <!-- Experience Section -->
       <section id="experience" class="px-8 lg:px-20 py-8 flex flex-col mx-auto gap-4 justify-center items-start min-h-40 mt-6 mb-6">
@@ -83,7 +83,7 @@
       </section>
 
       <!-- Parallax Background Image -->
-      <div role="image" aria-label="Background with abstract design" class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_2.jpg');"></div>
+      <div role="image" aria-label="Background with abstract design" class="parallax lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]"></div>
 
       <!-- Projects Section -->
       <section id="projects" class="px-8 lg:px-20 py-8 flex flex-col mx-auto gap-4 justify-center items-start min-h-40 mt-6 mb-6">
@@ -130,7 +130,7 @@
       </section>
 
       <!-- Parallax Background Image -->
-      <div role="image" aria-label="Background with abstract design" class="lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]" style="background-image: url('src/public/background_3.jpg');"></div>
+      <div role="image" aria-label="Background with abstract design" class="parallax lg:bg-fixed bg-center bg-no-repeat bg-cover min-h-[400px] w-full mt-[100px] mb-[100px]"></div>
 
       <!-- Footer Section -->
       <section>
@@ -164,8 +164,9 @@
         </footer>
       </section>
     </main>
-    <script src="src/scripts/contentLoader.js" type="module"></script>
+    <script src="src/scripts/loadImages.js" type="module" async></script>
+    <script src="src/scripts/contentLoader.js" type="module" async></script>
     <script src="src/scripts/searchProjects.js" type="module"></script>
-    <script src="src/scripts/menuScrollObserver.js" type="module"></script>
+    <script src="src/scripts/menuScrollObserver.js" type="module" defer></script>
   </body>
 </html>
