@@ -14,8 +14,10 @@ export function observeScrollForMenu () {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 if (document.body.classList.contains('dark')) {
+                    target.classList.remove('scrolled');
                     target.classList.add('dark-scrolled');
                 } else {
+                    target.classList.remove('dark-scrolled');
                     target.classList.add('scrolled');
                 }
             } else {
@@ -122,4 +124,12 @@ export async function injectContactEmail() {
     p.classList.add("text-sm");
     p.innerHTML = email.email;
     contactEmail.appendChild(p);
+}
+
+export function injectColorTheme() {
+    // Fetch color theme from localstorage
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.body.classList.add('dark');
+    }
 }
