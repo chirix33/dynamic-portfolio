@@ -13,9 +13,14 @@ export function observeScrollForMenu () {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
-                target.classList.add('scrolled');
+                if (document.body.classList.contains('dark')) {
+                    target.classList.add('dark-scrolled');
+                } else {
+                    target.classList.add('scrolled');
+                }
             } else {
                 target.classList.remove('scrolled');
+                target.classList.remove('dark-scrolled');
             }
         });
     });
@@ -26,7 +31,7 @@ export function observeScrollForMenu () {
 export async function injectExperience() {
     // Experience Section Content
     const experienceSection = document.querySelector("#experience_cards");
-    const experienceCardsClasses = ["experience-card", "cursor-pointer", "hover:shadow-md", "p-8", "rounded-lg", "w-full", "text-slate-800", "bg-gradient-to-r", "from-cream-cheese-100", "to-cream-cheese-200"];
+    const experienceCardsClasses = ["experience-card", "cursor-pointer", "hover:shadow-md", "p-8", "rounded-lg", "w-full", "text-slate-800", "bg-gradient-to-r", "from-cream-cheese-100", "to-cream-cheese-200", "dark:from-gray-500", "dark:to-gray-700", "dark:text-white"];
     
     // Grab experience.json data
     const experiences = await getContent("src/data/experience.json");
@@ -37,7 +42,7 @@ export async function injectExperience() {
         card.innerHTML = `
             <div class="flex justify-between items-center">
                 <h3 class="text-lg">${experience.company}</h3>
-                <span class="date text-gray-800 text-sm">${experience.start_date} - ${experience.end_date}</span>
+                <span class="date text-gray-800 dark:text-white text-sm">${experience.start_date} - ${experience.end_date}</span>
                 </div>
             <p class="font-bold">${experience.position}</p>
         `;
@@ -94,7 +99,7 @@ export async function injectProjects() {
             </div>
             </td>
             <td class="p-4 border-b border-blue-gray-50">
-            <a href="${project.link}" target="_blank" data-project="${project.name}" class="flex view-project relative align-middle select-none text-royal-palm-600 font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+            <a href="${project.link}" target="_blank" data-project="${project.name}" class="flex view-project relative align-middle select-none text-royal-palm-600 dark:text-white font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
                 <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5">
                     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />

@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    @apply transition-colors duration-200 ease-in-out;
+}
+
 :root {
     --color-primary: #70061F;
     --color-secondary: #458985;
@@ -41,6 +45,21 @@ ul.scrolled {
     left: 50%;
     transform: translateX(-50%);
     background: white;
+    border-radius: 7rem;
+    padding: 10px;
+    border: 1px solid #458985;
+    z-index: 2;
+    font-size: 14px;
+    gap: 8px;
+}
+
+ul.dark-scrolled {
+    position: fixed;
+    margin: auto;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #292524;
     border-radius: 7rem;
     padding: 10px;
     border: 1px solid #458985;
