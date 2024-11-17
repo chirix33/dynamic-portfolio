@@ -14,7 +14,7 @@
         "name": "RecipeShare",
         "description": "Submit & View recipes from other users.",
         "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
-        "status": "active",
+        "status": "completed",
         "more_information": "A platform for users to share and discover new recipes, featuring user authentication.",
         "full_picture": "src/data/images/recipeshare.ico",
         "icon": "src/data/images/recipeshare.ico",
