@@ -20,7 +20,7 @@ let parallaxImages = document.querySelectorAll(".parallax");
 try {
     const response = await fetch(`${baseUrl}?query=${query}&count=${per_page}&content_filter=${content_filter}&orientation=${size}&client_id=${client_id}`, requestOptions);
     const result = await response.json();
-    console.log(result);
+    
     for (let i = 0; i < parallaxImages.length; i++) {
         parallaxImages[i].style.backgroundImage = `url(${result[i].urls.raw})`;
     }
