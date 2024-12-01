@@ -1,16 +1,16 @@
 {
     "experiences": [
       {
+        "company": "ACM Illinois Tech",
+        "position": "Web Developer",
+        "start_date": "Nov 2024",
+        "end_date": "Present"
+      },
+      {
         "company": "Onesolution",
         "position": "Full Stack Developer",
         "start_date": "Sep 2023",
         "end_date": "Aug 2024"
-      },
-      {
-        "company": "Global Institute of Islamic Banking",
-        "position": "Web Developer",
-        "start_date": "Jun 2022",
-        "end_date": "Jul 2024"
       },
       {
         "company": "Kwame Nkrumah University",
