@@ -53,6 +53,7 @@ function populateProjects(filteredProjects) {
             </a>
             </td>
         `;
+        row.classList.add("hover", "cursor-pointer","hover:bg-royal-palm-100", "dark:hover:bg-gray-600");
         fragment.appendChild(row);
     });
     projectsTableBody.innerHTML = "";

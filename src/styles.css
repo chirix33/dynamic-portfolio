@@ -1311,9 +1311,38 @@ ul.dark-scrolled {
   font-style: normal;
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:bg-evil-forces-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(112 6 31 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-royal-palm-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 137 133 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-royal-palm-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 193 187 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-royal-palm-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 163 158 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-royal-palm-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 237 234 / var(--tw-bg-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1492,4 +1521,9 @@ ul.dark-scrolled {
 .dark\:text-zinc-900:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.dark\:hover\:bg-gray-600:hover:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
