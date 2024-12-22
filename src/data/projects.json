@@ -53,8 +53,8 @@
       {
         "name": "Python Scraper & Content Extractor",
         "description": "Scrape & Extract content from websites and track changes.",
-        "tech_stack": ["Python", "NumPy", "Scapy", "BeautifulSoup", "RAG"],
-        "status": "active",
+        "tech_stack": ["Python", "NumPy", "ScaPy", "BeautifulSoup", "RAG", "PyMuPDF"],
+        "status": "completed",
         "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "src/data/images/python.svg",
