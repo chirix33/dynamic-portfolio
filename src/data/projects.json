@@ -1,6 +1,26 @@
 {
     "projects": [
       {
+        "name": "Perfume Shopping Site",
+        "description": "A perfume shopping site",
+        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
+        "status": "active",
+        "more_information": "A modern e-commerce website dedicated to selling perfumes, featuring user authentication.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/perfume.png",
+        "link": "https://my-app-sooty-three.vercel.app/"
+      },
+      {
+        "name": "ACM Illinois Tech Website",
+        "description": "Main Website of ACM of Illinois Institute of Technology.",
+        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
+        "status": "active",
+        "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/acm_iit_logo.png",
+        "link": "https://acmillinoistech.org"
+      },
+      {
         "name": "Pokébook",
         "description": "View & Search for pokemons. Customized Theme.",
         "tech_stack": ["CSS", "JavaScript: ReactJS", "Axios", "localStorage"],
@@ -41,16 +61,6 @@
         "link": "https://knowords.onrender.com/"
       },
       {
-        "name": "Perfume Shopping Site",
-        "description": "A perfume shopping site",
-        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
-        "status": "active",
-        "more_information": "A modern e-commerce website dedicated to selling perfumes, featuring user authentication.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/perfume.png",
-        "link": "https://my-app-sooty-three.vercel.app/"
-      },
-      {
         "name": "Python Scraper & Content Extractor",
         "description": "Scrape & Extract content from websites and track changes.",
         "tech_stack": ["Python", "NumPy", "ScaPy", "BeautifulSoup", "RAG", "PyMuPDF"],
@@ -59,16 +69,6 @@
         "full_picture": "src/data/images/perfume.png",
         "icon": "src/data/images/python.svg",
         "link": "https://github.com/chirix33/WebScrapeInsight"
-      },
-      {
-        "name": "ACM Illinois Tech Website",
-        "description": "Main Website of ACM of Illinois Institute of Technology.",
-        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
-        "status": "active",
-        "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/acm_iit_logo.png",
-        "link": "https://acmillinoistech.org"
       }
     ]
 }  
