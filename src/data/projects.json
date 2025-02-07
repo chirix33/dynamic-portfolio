@@ -59,6 +59,16 @@
         "full_picture": "src/data/images/perfume.png",
         "icon": "src/data/images/python.svg",
         "link": "https://github.com/chirix33/WebScrapeInsight"
+      },
+      {
+        "name": "ACM Illinois Tech Website",
+        "description": "Main Website of ACM of Illinois Institute of Technology.",
+        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
+        "status": "active",
+        "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/acm_iit_logo.png",
+        "link": "https://acmillinoistech.org"
       }
     ]
 }  
