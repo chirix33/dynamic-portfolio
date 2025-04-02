@@ -69,6 +69,16 @@
         "full_picture": "src/data/images/perfume.png",
         "icon": "src/data/images/python.svg",
         "link": "https://github.com/chirix33/WebScrapeInsight"
+      },
+      {
+        "name": "Hospital Management System API",
+        "description": "A Rest API for a Hospital Management System.",
+        "tech_stack": ["JavaScript: Node.js", "EJS", "CSS", "TypeScript", "Prisma", "Netlify"],
+        "status": "completed",
+        "more_information": "A Rest API for a Hospital Management System. It provides endpoints for managing patients, doctors, and appointments.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/default.svg",
+        "link": "https://github.com/chirix33/hospital_mgt_api"
       }
     ]
 }  
