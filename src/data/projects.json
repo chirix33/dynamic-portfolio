@@ -1,16 +1,6 @@
 {
     "projects": [
       {
-        "name": "Perfume Shopping Site",
-        "description": "A perfume shopping site",
-        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
-        "status": "active",
-        "more_information": "A modern e-commerce website dedicated to selling perfumes, featuring user authentication.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/perfume.png",
-        "link": "https://my-app-sooty-three.vercel.app/"
-      },
-      {
         "name": "ACM Illinois Tech Website",
         "description": "Main Website of ACM of Illinois Institute of Technology.",
         "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
