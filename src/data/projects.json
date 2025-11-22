@@ -1,6 +1,26 @@
 {
     "projects": [
       {
+        "name": "Contractor CRM App",
+        "description": "An app where customers can request services and contractors can manage their work.",
+        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "React Native", "AWS", "PostgreSQL", "Expo", "Stripe"],
+        "status": "active",
+        "more_information": "An app where customers can request services and contractors can manage their work.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/allstarservice.webp",
+        "link": "https://allstar-pro.auth.us-east-1.amazoncognito.com/login?client_id=1hedid4gkq9auf3ii64t1j5svm&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd84l1y8p4kdic.cloudfront.net"
+      },
+      {
+        "name": "FomoCollabs",
+        "description": "A platform for creating and managing collaborations.",
+        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "Stripe", "Vercel", "Stripe"],
+        "status": "active",
+        "more_information": "A platform for creating and managing collaborations.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "src/data/images/fomoBlack.svg",
+        "link": "https://fomocollabs.app"
+      },
+      {
         "name": "ACM Illinois Tech Website",
         "description": "Main Website of ACM of Illinois Institute of Technology.",
         "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],

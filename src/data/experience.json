@@ -1,34 +1,28 @@
 {
     "experiences": [
       {
+        "company": "Lumena Energy",
+        "position": "Software Engineer Intern",
+        "start_date": "Sep 2025",
+        "end_date": "Present"
+      },
+      {
+        "company": "AIFP",
+        "position": "Software Engineer (AI/ML)",
+        "start_date": "Jun 2025",
+        "end_date": "Aug 2025"
+      },
+      {
+        "company": "FomoCollabs",
+        "position": "Full Stack Engineer",
+        "start_date": "May 2025",
+        "end_date": "Aug 2025"
+      },
+      {
         "company": "ACM Illinois Tech",
         "position": "Web Developer (Volunteer)",
         "start_date": "Nov 2024",
         "end_date": "Present"
-      },
-      {
-        "company": "AIFS",
-        "position": "Software Engineer (AI/ML)",
-        "start_date": "Oct 2024",
-        "end_date": "Present"
-      },
-      {
-        "company": "Onesolution",
-        "position": "Full Stack Developer",
-        "start_date": "Sep 2023",
-        "end_date": "Aug 2024"
-      },
-      {
-        "company": "Kwame Nkrumah University",
-        "position": "Junior Backend Developer",
-        "start_date": "Sep 2022",
-        "end_date": "Aug 2023"
-      },
-      {
-        "company": "Islamic Senior High School",
-        "position": "Programming Teacher",
-        "start_date": "May 2019",
-        "end_date": "May 2021"
       }
     ]
 }  
