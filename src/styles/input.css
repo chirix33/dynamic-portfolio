@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    @apply transition-colors duration-200 ease-in-out antialiased bg-cream-cheese-50 dark:bg-gray-900 dark:text-cream-cheese-50 max-w-full overflow-x-hidden;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+:root {
+    --color-primary: #70061F;
+    --color-secondary: #458985;
+    --color-tertiary: #D7D6A5;
+    --color-quaternary: #DBA67B;
+    --color-quinary: #A55C55;
+}
+
+nav li {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav li.active {
+    background-color: #70061F;
+    color: #ededd8;
+}
+
+nav > ul {
+    transition: .1s;
+}
+
+ul.scrolled {
+    position: fixed;
+    margin: auto;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 7rem;
+    padding: 10px;
+    border: 1px solid #458985;
+    z-index: 2;
+    font-size: 14px;
+    gap: 8px;
+}
+
+ul.dark-scrolled {
+    position: fixed;
+    margin: auto;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #292524;
+    border-radius: 7rem;
+    padding: 10px;
+    border: 1px solid #458985;
+    z-index: 2;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.hamburger {
+    position: fixed;
+    right: 6rem;
+    z-index: 2;
+    width: 2rem;
+    cursor: pointer;
+}
+
+/* Color Theme Swatches in Hex */
+.evil-forces { color: #70061F; }
+.royal-palm { color: #458985; }
+.cream-cheese { color: #D7D6A5; }
+.sweet-cashew { color: #DBA67B; }
+.tuscan-clay { color: #A55C55; }
+
+/* Fonts */
+.lumanosimo-regular {
+    font-family: "Lumanosimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
