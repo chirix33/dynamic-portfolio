@@ -4,6 +4,7 @@ export function useScrollObserver() {
   const [activeSection, setActiveSection] = useState('bio');
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const isHeaderVisible = useRef(true);
 
   useEffect(() => {
     const header = headerRef.current;
@@ -11,28 +12,35 @@ export function useScrollObserver() {
 
     if (!header || !menu) return;
 
-    // Observer for header scroll
-    const observer = new IntersectionObserver(
+    const updateMenuClass = () => {
+      if (isHeaderVisible.current) {
+        menu.classList.remove('scrolled');
+        menu.classList.remove('dark-scrolled');
+      } else if (document.body.classList.contains('dark')) {
+        menu.classList.remove('scrolled');
+        menu.classList.add('dark-scrolled');
+      } else {
+        menu.classList.remove('dark-scrolled');
+        menu.classList.add('scrolled');
+      }
+    };
+
+    // Observer for header visibility — drives floating nav appearance
+    const headerObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            if (document.body.classList.contains('dark')) {
-              menu.classList.remove('scrolled');
-              menu.classList.add('dark-scrolled');
-            } else {
-              menu.classList.remove('dark-scrolled');
-              menu.classList.add('scrolled');
-            }
-          } else {
-            menu.classList.remove('scrolled');
-            menu.classList.remove('dark-scrolled');
-          }
+          isHeaderVisible.current = entry.isIntersecting;
+          updateMenuClass();
         });
       },
       { threshold: 0 }
     );
 
-    observer.observe(header);
+    headerObserver.observe(header);
+
+    // Watch for theme changes so floating nav style updates immediately
+    const bodyObserver = new MutationObserver(updateMenuClass);
+    bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
     // Active section highlighting
     const sections = ['bio', 'experience', 'projects'];
@@ -53,7 +61,8 @@ export function useScrollObserver() {
     setActiveMenuItem();
 
     return () => {
-      observer.disconnect();
+      headerObserver.disconnect();
+      bodyObserver.disconnect();
       window.removeEventListener('scroll', setActiveMenuItem);
     };
   }, []);
@@ -72,4 +81,3 @@ export function useScrollObserver() {
 
   return { activeSection, scrollToSection, headerRef, menuRef };
 }
-
