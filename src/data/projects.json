@@ -7,7 +7,7 @@
         "status": "active",
         "more_information": "An app where customers can request services and contractors can manage their work.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/allstarservice.webp",
+        "icon": "/images/allstarservice.webp",
         "link": "https://allstar-pro.auth.us-east-1.amazoncognito.com/login?client_id=1hedid4gkq9auf3ii64t1j5svm&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd84l1y8p4kdic.cloudfront.net"
       },
       {
@@ -17,7 +17,7 @@
         "status": "active",
         "more_information": "A platform for creating and managing collaborations.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/fomoBlack.svg",
+        "icon": "/images/fomoBlack.svg",
         "link": "https://fomocollabs.app"
       },
       {
@@ -27,7 +27,7 @@
         "status": "active",
         "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/acm_iit_logo.png",
+        "icon": "/images/acm_iit_logo.png",
         "link": "https://acmillinoistech.org"
       },
       {
@@ -37,7 +37,7 @@
         "status": "completed",
         "more_information": "A web application that allows users to explore information about different Pokémon, with a custom UI theme.",
         "full_picture": "src/data/images/pokeapi.png",
-        "icon": "src/data/images/pokeapi.png",
+        "icon": "/images/pokeapi.png",
         "link": "https://funny-baklava-823a63.netlify.app/"
       },
       {
@@ -47,7 +47,7 @@
         "status": "completed",
         "more_information": "A platform for users to share and discover new recipes, featuring user authentication.",
         "full_picture": "src/data/images/recipeshare.ico",
-        "icon": "src/data/images/recipeshare.ico",
+        "icon": "/images/recipeshare.ico",
         "link": "https://recipe-share-app.vercel.app/"
       },
       {
@@ -57,7 +57,7 @@
         "status": "completed",
         "more_information": "A web app for managing elections, allowing users to vote and generate result reports.",
         "full_picture": "src/data/images/votingapp.jpg",
-        "icon": "src/data/images/votingapp.jpg",
+        "icon": "/images/votingapp.jpg",
         "link": "http://voting.byethost33.com/"
       },
       {
@@ -67,7 +67,7 @@
         "status": "completed",
         "more_information": "An English lexical application that helps users improve their vocabulary through interactive learning.",
         "full_picture": "src/data/images/knowords.jpg",
-        "icon": "src/data/images/knowords.jpg",
+        "icon": "/images/knowords.jpg",
         "link": "https://knowords.onrender.com/"
       },
       {
@@ -77,7 +77,7 @@
         "status": "completed",
         "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/python.svg",
+        "icon": "/images/python.svg",
         "link": "https://github.com/chirix33/WebScrapeInsight"
       },
       {
@@ -87,7 +87,7 @@
         "status": "completed",
         "more_information": "A Rest API for a Hospital Management System. It provides endpoints for managing patients, doctors, and appointments.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "src/data/images/default.svg",
+        "icon": "/images/default.svg",
         "link": "https://github.com/chirix33/hospital_mgt_api"
       }
     ]

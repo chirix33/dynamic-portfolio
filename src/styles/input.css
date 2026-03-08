@@ -7,7 +7,11 @@
 }
 
 body {
-    @apply transition-colors duration-200 ease-in-out;
+    @apply transition-colors duration-200 ease-in-out antialiased bg-cream-cheese-50 dark:bg-gray-900 dark:text-cream-cheese-50 max-w-full overflow-x-hidden;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
 :root {
@@ -16,18 +20,6 @@ body {
     --color-tertiary: #D7D6A5;
     --color-quaternary: #DBA67B;
     --color-quinary: #A55C55;
-}
-
-body {
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-/* Offset scroll target so floating nav never covers section headings */
-section {
-    scroll-margin-top: 100px;
 }
 
 nav li {

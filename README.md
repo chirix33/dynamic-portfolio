@@ -45,12 +45,67 @@ The website has been designed with a focus on performance, accessibility, and re
 
 This portfolio is built using the following technologies:
 
-- **HTML5**: For semantic structure and content.
-- **CSS3**: For custom styling and animations, utilizing TailwindCSS for responsive design.
-- **JavaScript (ES6)**: For interactivity and dynamic content loading.
-- **Fetch API**: For fetching external data (e.g., projects, experience) from JSON files.
-- **Unsplash API**: For dynamically loading background images.
-- **IntersectionObserver API**: For lazy loading of images and sections.
-- **Local Storage**: To persist the user’s theme preference (light/dark).
-- **FontAwesome & Custom SVGs**: For icons used throughout the website.
-- **Google Fonts**: For custom fonts to enhance the website's look and feel.
+- **React 18**: Modern React with hooks for component-based architecture
+- **Vite**: Fast build tool and development server
+- **TailwindCSS**: Utility-first CSS framework with custom color palette
+- **JavaScript (ES6+)**: Modern JavaScript features and modules
+- **React Hooks**: Custom hooks for theme management, scroll observation, and image loading
+- **Unsplash API**: For dynamically loading background images
+- **Local Storage**: To persist the user's theme preference (light/dark)
+- **Google Fonts**: For custom fonts (Lumanosimo, Manrope, Courier Prime)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd dynamic-portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Add your Unsplash API key (optional - defaults will be used if not provided)
+
+4. Start the development server:
+```bash
+npm run dev
+```
+
+5. Build for production:
+```bash
+npm run build
+```
+
+6. Preview production build:
+```bash
+npm run preview
+```
+
+### Project Structure
+
+```
+dynamic-portfolio/
+├── public/           # Static assets (images, favicon)
+├── src/
+│   ├── components/  # React components
+│   ├── hooks/       # Custom React hooks
+│   ├── data/        # JSON data files
+│   ├── styles/      # CSS and Tailwind configuration
+│   ├── App.jsx      # Main app component
+│   └── main.jsx     # React entry point
+├── index.html       # HTML entry point
+├── vite.config.js  # Vite configuration
+└── tailwind.config.js # Tailwind configuration
+```
