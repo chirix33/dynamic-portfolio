@@ -1,4 +1,5 @@
 import emailData from '../data/email.json';
+import CopyableEmail from './CopyableEmail';
 
 function Footer() {
   const email = emailData.email || '';
@@ -10,7 +11,13 @@ function Footer() {
           <div className="flex justify-between items-center w-full my-8">
             <div id="contact_email">
               <h4 className="text-2xl dark:text-cream-cheese-50">Get In Touch</h4>
-              {email && <p className="text-sm cursor-pointer dark:text-cream-cheese-50">{email}</p>}
+              {email && (
+                <CopyableEmail
+                  email={email}
+                  className="text-sm mt-1 dark:text-cream-cheese-50"
+                  linkClassName="dark:text-cream-cheese-50"
+                />
+              )}
             </div>
             <ul aria-label="Contact Links" className="list-style-none pl-0 flex flex-col gap-2">
               <a

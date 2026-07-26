@@ -1,4 +1,9 @@
+import emailData from '../data/email.json';
+import CopyableEmail from './CopyableEmail';
+
 function Bio() {
+  const email = emailData.email || '';
+
   return (
     <section id="bio" className="px-8 lg:px-20 py-8 flex flex-col mx-auto lg:flex-row gap-4 justify-start items-center min-h-40 mt-6 mb-6">
       <div className="grow-0 basis-1/3 flex justify-center items-center mb-4 lg:mb-0">
@@ -23,6 +28,12 @@ function Bio() {
           </span>{' '}
           I love photography and anime!
         </p>
+        {email && (
+          <p className="mt-4 flex flex-wrap items-center gap-2 justify-center lg:justify-start">
+            Have a project in mind or just want to say hi? Reach me at{' '}
+            <CopyableEmail email={email} />
+          </p>
+        )}
       </div>
     </section>
   );
