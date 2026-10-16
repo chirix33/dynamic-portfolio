@@ -1,22 +1,25 @@
 {
     "experiences": [
       {
-        "company": "AIFP",
-        "position": "Software Engineer (AI/ML)",
-        "start_date": "Jun 2025",
-        "end_date": "Aug 2025"
+        "company": "ACM Illinois Tech",
+        "position": "Web Developer (Volunteer)",
+        "start_date": "Nov 2024",
+        "end_date": "Jan 2026",
+        "bullets": []
       },
       {
         "company": "Lumena Energy",
         "position": "Software Engineer Intern",
         "start_date": "Sep 2025",
-        "end_date": "Dec 2025"
+        "end_date": "Dec 2025",
+        "bullets": []
       },
       {
-        "company": "ACM Illinois Tech",
-        "position": "Web Developer (Volunteer)",
-        "start_date": "Nov 2024",
-        "end_date": "Jan 2026"
+        "company": "AIFP",
+        "position": "Software Engineer (AI/ML)",
+        "start_date": "Jun 2025",
+        "end_date": "Aug 2025",
+        "bullets": []
       }
     ]
-}  
+}
