@@ -2,12 +2,12 @@
   "papers": [
     {
       "title": "RegBridge: Inspectable AI-Assisted Decisions for Regulatory Document Reuse",
-      "description": "This paper presents RegBridge, a framework for inspecting and understanding AI-assisted decisions in regulatory document reuse.",
+      "description": "A prototype for reviewing FDA eCTD document reuse. An LLM produces citation-bounded findings, and deterministic rules make the final decision. On 12 held-out cases it was correct 11 times in each of 3 runs with no unsafe reuse, versus 83% accuracy for a rules-only baseline (2 unsafe reuses). React/FastAPI demo with 55 network-free integration tests.",
       "link": "papers/1.pdf"
     },
     {
       "title": "SimPhysQA: Evidence-Bound Language Annotation of Physical Simulations for Grounded Scientific Question Answering",
-      "description": "This paper presents SimPhysQA, a framework for grounded scientific question answering using physical simulations.",
+      "description": "A dataset that adds timestamp-level language descriptions to MuJoCo/PyBullet trajectories across four domains, with every sentence bound to simulator fields and validated. Nine local LLM configurations reach up to 92.5% on direct readout but no more than 12.5% on prediction and 35% on counterfactuals. Under review.",
       "link": "papers/2.pdf"
     }
   ]
