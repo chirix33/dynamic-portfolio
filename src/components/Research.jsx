@@ -16,6 +16,7 @@ function handleWheel(event) {
 
 function Research() {
   const papers = researchData.papers || [];
+  const howIBuild = researchData.how_i_build || [];
 
   return (
     <section
@@ -36,6 +37,16 @@ function Research() {
           <ResearchCard key={paper.link} paper={paper} />
         ))}
       </div>
+      {howIBuild.length > 0 && (
+        <div className="w-full mt-4">
+          <h3 className="text-lg font-bold">How I build</h3>
+          <ul className="mt-4 pl-6 list-disc text-sm leading-6">
+            {howIBuild.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </section>
   );
 }

@@ -10,5 +10,11 @@
       "description": "A dataset that adds timestamp-level language descriptions to MuJoCo/PyBullet trajectories across four domains, with every sentence bound to simulator fields and validated. Nine local LLM configurations reach up to 92.5% on direct readout but no more than 12.5% on prediction and 35% on counterfactuals. Under review.",
       "link": "papers/2.pdf"
     }
+  ],
+  "how_i_build": [
+    "Frozen held-out evaluations repeated over three runs.",
+    "55 network-free integration tests.",
+    "Offline schema validation against pinned DTDs.",
+    "Auditable run records."
   ]
 }
