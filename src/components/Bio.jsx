@@ -18,7 +18,7 @@ function Bio() {
           I'm <span className="text-tuscan-clay pb-px border-b-4 border-tuscan-clay">Ashraf</span>,
         </h1>
         <h1 className="text-2xl lg:text-4xl lumanosimo-regular mb-4">
-          a Full Stack Software Engineer.
+          an AI Engineer & Student Researcher.
         </h1>
         <p>I build web applications using modern technologies and tools.</p>
         <p>
@@ -28,12 +28,6 @@ function Bio() {
           </span>{' '}
           I love photography and anime!
         </p>
-        {email && (
-          <p className="mt-4 flex flex-wrap items-center gap-2 justify-center lg:justify-start">
-            Have a project in mind or just want to say hi? Reach me at{' '}
-            <CopyableEmail email={email} />
-          </p>
-        )}
       </div>
     </section>
   );
