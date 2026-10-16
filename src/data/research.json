@@ -1,0 +1,14 @@
+{
+  "papers": [
+    {
+      "title": "Replace with Your First Paper Title",
+      "description": "Replace this placeholder with a concise summary of the research question, method, and key result.",
+      "link": "https://example.com/research-paper-1"
+    },
+    {
+      "title": "Replace with Your Second Paper Title",
+      "description": "Replace this placeholder with a brief description of the paper and its contribution to the field.",
+      "link": "https://example.com/research-paper-2"
+    }
+  ]
+}

@@ -22,7 +22,7 @@ function Footer() {
             <ul aria-label="Contact Links" className="list-style-none pl-0 flex flex-col gap-2">
               <a
                 className="flex items-center"
-                href="/src/data/ashraf_resume.pdf"
+                href="/data/ashraf_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

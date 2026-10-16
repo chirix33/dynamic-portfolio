@@ -21,7 +21,7 @@ function Experience() {
       </div>
       <a
         aria-label="Download my resume"
-        href="/src/data/ashraf_resume.pdf"
+        href="/data/ashraf_resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="transition flex justify-center items-center gap-2 w-auto mx-auto mt-4 p-4 text-evil-forces-900 hover:text-white rounded-full border border-evil-forces-900 font-bold bg-white hover:bg-evil-forces-900 text-center text-sm dark:text-white dark:border-white"

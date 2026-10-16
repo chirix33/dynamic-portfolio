@@ -2,6 +2,7 @@ function Header({ activeSection, onNavigate, headerRef, menuRef }) {
   const menuItems = [
     { id: 'bio', label: 'Bio' },
     { id: 'experience', label: 'Experience' },
+    { id: 'research', label: 'Research' },
     { id: 'projects', label: 'Projects' },
   ];
 
@@ -14,14 +15,14 @@ function Header({ activeSection, onNavigate, headerRef, menuRef }) {
         <ul
           ref={menuRef}
           id="menu"
-          className="flex mt-6 text-sm gap-px lg:w-auto lg:text-base lg:mt-0 justify-end lg:gap-3 items-center"
+          className="flex mt-6 text-xs gap-1 lg:w-auto lg:text-base lg:mt-0 justify-center lg:justify-end lg:gap-3 items-center"
         >
           {menuItems.map((item) => (
             <li
               key={item.id}
               onClick={() => onNavigate(item.id)}
               aria-current={activeSection === item.id ? 'true' : undefined}
-              className={`cursor-pointer py-3 px-4 lg:hover:bg-royal-palm-500 lg:hover:text-cream-cheese-100 lg:px-6 rounded-full mx-4 ${
+              className={`cursor-pointer py-2 px-2 sm:px-3 lg:py-3 lg:hover:bg-royal-palm-500 lg:hover:text-cream-cheese-100 lg:px-6 rounded-full lg:mx-4 ${
                 activeSection === item.id ? 'active' : ''
               }`}
             >

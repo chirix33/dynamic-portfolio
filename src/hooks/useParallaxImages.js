@@ -4,6 +4,7 @@ const defaultImages = [
   '/images/background_1.jpg',
   '/images/background_2.jpg',
   '/images/background_3.jpg',
+  '/images/background_3.jpg'
 ];
 
 export function useParallaxImages() {
@@ -20,7 +21,7 @@ export function useParallaxImages() {
 
       const baseUrl = 'https://api.unsplash.com/photos/random';
       const query = '3d+landscape';
-      const perPage = 3;
+      const perPage = 4;
       const contentFilter = 'high';
       const size = 'landscape';
 

@@ -8,6 +8,7 @@ import Bio from './components/Bio';
 import ParallaxBackground from './components/ParallaxBackground';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Research from './components/Research';
 import Footer from './components/Footer';
 
 function App() {
@@ -30,8 +31,10 @@ function App() {
         <ParallaxBackground imageUrl={parallaxImages[0]} index={0} />
         <Experience />
         <ParallaxBackground imageUrl={parallaxImages[1]} index={1} />
-        <Projects />
+        <Research />
         <ParallaxBackground imageUrl={parallaxImages[2]} index={2} />
+        <Projects />
+        <ParallaxBackground imageUrl={parallaxImages[3]} index={3} />
         <Footer />
       </main>
     </div>
