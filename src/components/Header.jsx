@@ -1,8 +1,8 @@
 function Header({ activeSection, onNavigate, headerRef, menuRef }) {
   const menuItems = [
     { id: 'bio', label: 'Bio' },
-    { id: 'experience', label: 'Experience' },
     { id: 'research', label: 'Research' },
+    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
   ];
 
