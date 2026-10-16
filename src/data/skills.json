@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "AI/ML & Research",
+      "items": [
+        "Python",
+        "NumPy",
+        "RAG",
+        "Structured-output LLMs",
+        "MuJoCo/PyBullet",
+        "Local inference of quantized models (Qwen, Llama, Gemma)"
+      ]
+    },
+    {
+      "name": "Backend & Data",
+      "items": ["FastAPI", "Node.js/Express", "PostgreSQL", "Prisma", "MySQL"]
+    },
+    {
+      "name": "Frontend",
+      "items": ["React", "Next.js", "TypeScript", "React Native/Expo", "Tailwind CSS"]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "items": ["AWS (Cognito)", "Vercel/Netlify/Render", "Stripe integration"]
+    }
+  ],
+  "also": ["PHP", "jQuery", ".NET"]
+}

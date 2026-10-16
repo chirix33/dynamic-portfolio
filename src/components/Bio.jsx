@@ -1,8 +1,11 @@
 import emailData from '../data/email.json';
 import CopyableEmail from './CopyableEmail';
+import skillsData from '../data/skills.json';
 
 function Bio() {
   const email = emailData.email || '';
+  const skillGroups = skillsData.groups || [];
+  const alsoSkills = skillsData.also || [];
 
   return (
     <section id="bio" className="px-8 lg:px-20 py-8 flex flex-col mx-auto lg:flex-row gap-4 justify-start items-center min-h-40 mt-6 mb-6">
@@ -15,18 +18,28 @@ function Bio() {
       </div>
       <div className="grow text-center lg:text-left">
         <h1 className="text-2xl lg:text-4xl lumanosimo-regular mb-4">
-          I'm <span className="text-tuscan-clay pb-px border-b-4 border-tuscan-clay">Ashraf</span>,
+          I'm <span className="text-tuscan-clay pb-px border-b-4 border-tuscan-clay">
+            Ashraf <span className="whitespace-nowrap">Abdul-Muumin</span>
+          </span>,
         </h1>
         <h1 className="text-2xl lg:text-4xl lumanosimo-regular mb-4">
-          an AI Engineer & Student Researcher.
+          an AI Researcher & Software Engineer.
         </h1>
-        <p>I build web applications using modern technologies and tools.</p>
         <p>
-          My Tech Stack experience includes:{' '}
-          <span className="font-bold">
-            React, NextJS, Node.js, Express, .NET, PHP, MySQL, and PostgreSQL.
-          </span>{' '}
-          I love photography and anime!
+          CS PhD student at the University of Alabama (advisor: Dr. Kaushik Roy), working on
+          neurosymbolic AI. I build LLM systems where every claim is tied to evidence and checked by
+          deterministic code, and I engineer the pipelines, APIs and deployments around them.
+        </p>
+        <div className="mt-4">
+          {skillGroups.map((group) => (
+            <p key={group.name}>
+              <span className="font-bold">{group.name}:</span> {group.items.join(', ')}
+            </p>
+          ))}
+          {alsoSkills.length > 0 && <p>Also: {alsoSkills.join(', ')}</p>}
+        </div>
+        <p className="mt-4 text-sm">
+          <span className="font-bold">Beyond research:</span> photography and anime.
         </p>
       </div>
     </section>
