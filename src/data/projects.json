@@ -2,9 +2,10 @@
     "projects": [
       {
         "name": "Contractor CRM App",
-        "description": "An app where customers can request services and contractors can manage their work.",
+        "description": "Two-sided marketplace where customers request services and contractors manage jobs and get paid via Stripe. Next.js web app plus Expo/React Native client, PostgreSQL, AWS with Cognito auth.",
         "tech_stack": ["Next.js", "TailwindCSS", "TypeScript", "React Native", "AWS", "PostgreSQL", "Expo", "Stripe"],
         "status": "active",
+        "featured": true,
         "more_information": "An app where customers can request services and contractors can manage their work.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "/images/allstarservice.webp",
@@ -71,10 +72,11 @@
         "link": "https://knowords.onrender.com/"
       },
       {
-        "name": "Python Scraper & Content Extractor",
-        "description": "Scrape & Extract content from websites and track changes.",
-        "tech_stack": ["Python", "NumPy", "ScaPy", "BeautifulSoup", "RAG", "PyMuPDF"],
+        "name": "WebScrapeInsight",
+        "description": "Tracks changes on web pages and extracts structured content from HTML and PDFs for retrieval pipelines.",
+        "tech_stack": ["Python", "NumPy", "Scrapy", "BeautifulSoup", "RAG", "PyMuPDF"],
         "status": "completed",
+        "featured": true,
         "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "/images/python.svg",
