@@ -1,4 +1,8 @@
+import resolvePaperLink from "../utils/resolvePaperLink";
+
 function ResearchCard({ paper }) {
+  const href = resolvePaperLink(paper.link);
+
   return (
     <article className="flex min-h-64 w-[85vw] max-w-sm shrink-0 snap-start flex-col rounded-lg border border-royal-palm-500/25 bg-white/30 p-8 shadow-sm backdrop-blur-sm transition hover:border-royal-palm-500/50 hover:shadow-md dark:border-cream-cheese-50/20 dark:bg-gray-800/30 dark:hover:border-cream-cheese-50/40 sm:w-80">
       <h3 className="text-lg font-bold text-slate-800 dark:text-cream-cheese-50">
@@ -8,7 +12,7 @@ function ResearchCard({ paper }) {
         {paper.description}
       </p>
       <a
-        href={paper.link}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Read ${paper.title}`}
