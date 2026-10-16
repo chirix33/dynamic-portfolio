@@ -1,13 +1,13 @@
 {
   "papers": [
     {
-      "title": "Replace with Your First Paper Title",
-      "description": "Replace this placeholder with a concise summary of the research question, method, and key result.",
+      "title": "RegBridge: Inspectable AI-Assisted Decisions for Regulatory Document Reuse",
+      "description": "This paper presents RegBridge, a framework for inspecting and understanding AI-assisted decisions in regulatory document reuse.",
       "link": "https://example.com/research-paper-1"
     },
     {
-      "title": "Replace with Your Second Paper Title",
-      "description": "Replace this placeholder with a brief description of the paper and its contribution to the field.",
+      "title": "SimPhysQA: Evidence-Bound Language Annotation of Physical Simulations for Grounded Scientific Question Answering",
+      "description": "This paper presents SimPhysQA, a framework for grounded scientific question answering using physical simulations.",
       "link": "https://example.com/research-paper-2"
     }
   ]
