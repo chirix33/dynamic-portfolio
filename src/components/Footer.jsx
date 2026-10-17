@@ -99,9 +99,9 @@ function Footer() {
           </div>
           <br />
           <div className="flex justify-between items-center w-full mt-8">
-            <p className="dark:text-cream-cheese-50">Copyright &copy; 2024</p>
+            <p className="dark:text-cream-cheese-50">Copyright &copy; {new Date().getFullYear()}</p>
             <p className="dark:text-cream-cheese-50">
-              <a href="https://www.iit.edu" className="dark:text-cream-cheese-50">Made at Illinois Tech</a> 🖤
+              <a href="https://www.ua.edu" className="dark:text-cream-cheese-50">University of Alabama</a> 🖤
             </p>
           </div>
         </section>

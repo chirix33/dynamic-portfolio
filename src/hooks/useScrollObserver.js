@@ -43,7 +43,7 @@ export function useScrollObserver() {
     bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
     // Active section highlighting
-    const sections = ['bio', 'experience', 'research', 'projects'];
+    const sections = ['bio', 'research', 'experience', 'projects'];
     const setActiveMenuItem = () => {
       let index = sections.length;
       const scrollY = window.scrollY + 200;

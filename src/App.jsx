@@ -29,9 +29,9 @@ function App() {
       <main>
         <Bio />
         <ParallaxBackground imageUrl={parallaxImages[0]} index={0} />
-        <Experience />
-        <ParallaxBackground imageUrl={parallaxImages[1]} index={1} />
         <Research />
+        <ParallaxBackground imageUrl={parallaxImages[1]} index={1} />
+        <Experience />
         <ParallaxBackground imageUrl={parallaxImages[2]} index={2} />
         <Projects />
         <ParallaxBackground imageUrl={parallaxImages[3]} index={3} />

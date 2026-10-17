@@ -8,6 +8,13 @@ function ExperienceCard({ experience }) {
         </span>
       </div>
       <p className="font-bold">{experience.position}</p>
+      {experience.bullets?.length > 0 && (
+        <ul className="mt-4 pl-6 list-disc text-sm">
+          {experience.bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

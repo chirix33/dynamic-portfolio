@@ -1,30 +1,40 @@
 {
     "projects": [
       {
-        "name": "Contractor CRM App",
-        "description": "An app where customers can request services and contractors can manage their work.",
-        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "React Native", "AWS", "PostgreSQL", "Expo", "Stripe"],
+        "name": "RegBridge",
+        "description": "Live demo of my RegBridge research paper. An LLM produces citation-bounded findings on FDA eCTD document reuse, and deterministic rules make the final decision.",
+        "tech_stack": ["React", "FastAPI", "Python", "LLMs", "Vercel"],
         "status": "active",
-        "more_information": "An app where customers can request services and contractors can manage their work.",
+        "more_information": "Research demo for the RegBridge paper: inspectable AI-assisted decisions for regulatory document reuse, backed by 55 network-free integration tests.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/allstarservice.webp",
-        "link": "https://allstar-pro.auth.us-east-1.amazoncognito.com/login?client_id=1hedid4gkq9auf3ii64t1j5svm&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd84l1y8p4kdic.cloudfront.net"
+        "icon": "/images/default.svg",
+        "link": "https://regbridge-web.vercel.app"
       },
       {
-        "name": "FomoCollabs",
-        "description": "A platform for creating and managing collaborations.",
-        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "Stripe", "Vercel", "Stripe"],
+        "name": "SimPhysQA",
+        "description": "Code for my SimPhysQA research dataset: timestamp-level language annotations of physics simulations, with every sentence bound to simulator fields and validated.",
+        "tech_stack": ["Python", "MuJoCo", "PyBullet", "Local LLMs"],
         "status": "active",
-        "more_information": "A platform for creating and managing collaborations.",
+        "more_information": "Evidence-bound language annotation of MuJoCo/PyBullet trajectories across four domains, used to benchmark local LLM configurations on readout, prediction and counterfactual questions.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/fomoBlack.svg",
-        "link": "https://fomocollabs.app"
+        "icon": "/images/default.svg",
+        "link": "https://github.com/chirix33/simphysqa"
+      },
+      {
+        "name": "WebScrapeInsight",
+        "description": "Tracks changes on web pages and extracts structured content from HTML and PDFs for retrieval pipelines.",
+        "tech_stack": ["Python", "NumPy", "Scrapy", "BeautifulSoup", "RAG", "PyMuPDF"],
+        "status": "completed",
+        "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "/images/python.svg",
+        "link": "https://github.com/chirix33/WebScrapeInsight"
       },
       {
         "name": "ACM Illinois Tech Website",
         "description": "Main Website of ACM of Illinois Institute of Technology.",
-        "tech_stack": ["NextJS", "TailwinCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
-        "status": "active",
+        "tech_stack": ["Next.js", "TailwindCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
+        "status": "completed",
         "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "/images/acm_iit_logo.png",
@@ -33,7 +43,7 @@
       {
         "name": "Pokébook",
         "description": "View & Search for pokemons. Customized Theme.",
-        "tech_stack": ["CSS", "JavaScript: ReactJS", "Axios", "localStorage"],
+        "tech_stack": ["CSS", "JavaScript", "React", "Axios", "localStorage"],
         "status": "completed",
         "more_information": "A web application that allows users to explore information about different Pokémon, with a custom UI theme.",
         "full_picture": "src/data/images/pokeapi.png",
@@ -43,52 +53,12 @@
       {
         "name": "RecipeShare",
         "description": "Submit & View recipes from other users.",
-        "tech_stack": ["TailwindCSS", "JavaScript: NextJS", "NextAuth"],
+        "tech_stack": ["TailwindCSS", "JavaScript", "Next.js", "NextAuth"],
         "status": "completed",
         "more_information": "A platform for users to share and discover new recipes, featuring user authentication.",
         "full_picture": "src/data/images/recipeshare.ico",
         "icon": "/images/recipeshare.ico",
         "link": "https://recipe-share-app.vercel.app/"
-      },
-      {
-        "name": "Voting Web App",
-        "description": "Vote & Manage elections. Reports are generated.",
-        "tech_stack": ["HTML", "Bootstrap", "JavaScript: jQuery", "FPDF", "PHP"],
-        "status": "completed",
-        "more_information": "A web app for managing elections, allowing users to vote and generate result reports.",
-        "full_picture": "src/data/images/votingapp.jpg",
-        "icon": "/images/votingapp.jpg",
-        "link": "http://voting.byethost33.com/"
-      },
-      {
-        "name": "Knowords",
-        "description": "English Lexical App",
-        "tech_stack": ["CSS", "EJS", "JavaScript: jQuery", "Axios", "NodeJS"],
-        "status": "completed",
-        "more_information": "An English lexical application that helps users improve their vocabulary through interactive learning.",
-        "full_picture": "src/data/images/knowords.jpg",
-        "icon": "/images/knowords.jpg",
-        "link": "https://knowords.onrender.com/"
-      },
-      {
-        "name": "Python Scraper & Content Extractor",
-        "description": "Scrape & Extract content from websites and track changes.",
-        "tech_stack": ["Python", "NumPy", "ScaPy", "BeautifulSoup", "RAG", "PyMuPDF"],
-        "status": "completed",
-        "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/python.svg",
-        "link": "https://github.com/chirix33/WebScrapeInsight"
-      },
-      {
-        "name": "Hospital Management System API",
-        "description": "A Rest API for a Hospital Management System.",
-        "tech_stack": ["JavaScript: Node.js", "EJS", "CSS", "TypeScript", "Prisma", "Netlify"],
-        "status": "completed",
-        "more_information": "A Rest API for a Hospital Management System. It provides endpoints for managing patients, doctors, and appointments.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/default.svg",
-        "link": "https://github.com/chirix33/hospital_mgt_api"
       }
     ]
 }  

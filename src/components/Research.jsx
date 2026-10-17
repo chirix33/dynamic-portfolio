@@ -16,6 +16,7 @@ function handleWheel(event) {
 
 function Research() {
   const papers = researchData.papers || [];
+  const howIBuild = researchData.how_i_build || [];
 
   return (
     <section

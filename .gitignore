@@ -142,3 +142,8 @@ dist
 .idea/*
 
 /src/data/ashraf_resume_*
+/dist-ssr
+
+.claude/
+
+TODO.md

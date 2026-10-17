@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 export function useTheme() {
   const [theme, setTheme] = useState(() => {
+    // No localStorage during build-time prerendering
+    if (typeof window === 'undefined') return 'light';
     const savedTheme = localStorage.getItem('theme');
     return savedTheme || 'light';
   });
