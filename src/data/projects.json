@@ -18,7 +18,7 @@
         "more_information": "Evidence-bound language annotation of MuJoCo/PyBullet trajectories across four domains, used to benchmark local LLM configurations on readout, prediction and counterfactual questions.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "/images/default.svg",
-        "link": "https://github.com/chirix33/simphyqa"
+        "link": "https://github.com/chirix33/simphysqa"
       },
       {
         "name": "WebScrapeInsight",
