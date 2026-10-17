@@ -26,18 +26,16 @@ function Bio() {
           an AI Researcher & Software Engineer.
         </h1>
         <p>
-          CS PhD student at the University of Alabama (advisor: Dr. Kaushik Roy), working on
-          neurosymbolic AI. I build LLM systems where every claim is tied to evidence and checked by
-          deterministic code, and I engineer the pipelines, APIs and deployments around them.
+          CS PhD student at the University of Alabama. My research is in Neurosymbolic AI and robotics. I also engineer the pipelines, APIs and deployments.
         </p>
-        <div className="mt-4">
+        {/* <div className="mt-4">
           {skillGroups.map((group) => (
             <p key={group.name}>
               <span className="font-bold">{group.name}:</span> {group.items.join(', ')}
             </p>
           ))}
           {alsoSkills.length > 0 && <p>Also: {alsoSkills.join(', ')}</p>}
-        </div>
+        </div> */}
         <p className="mt-4 text-sm">
           <span className="font-bold">Beyond research:</span> photography and anime.
         </p>
