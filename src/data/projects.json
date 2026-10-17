@@ -1,24 +1,14 @@
 {
     "projects": [
       {
-        "name": "Contractor CRM App",
-        "description": "Two-sided marketplace where customers request services and contractors manage jobs and get paid via Stripe. Next.js web app plus Expo/React Native client, PostgreSQL, AWS with Cognito auth.",
-        "tech_stack": ["Next.js", "TailwindCSS", "TypeScript", "React Native", "AWS", "PostgreSQL", "Expo", "Stripe"],
-        "status": "active",
-        "more_information": "An app where customers can request services and contractors can manage their work.",
+        "name": "WebScrapeInsight",
+        "description": "Tracks changes on web pages and extracts structured content from HTML and PDFs for retrieval pipelines.",
+        "tech_stack": ["Python", "NumPy", "Scrapy", "BeautifulSoup", "RAG", "PyMuPDF"],
+        "status": "completed",
+        "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
         "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/allstarservice.webp",
-        "link": "https://allstar-pro.auth.us-east-1.amazoncognito.com/login?client_id=1hedid4gkq9auf3ii64t1j5svm&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fd84l1y8p4kdic.cloudfront.net"
-      },
-      {
-        "name": "FomoCollabs",
-        "description": "A platform for creating and managing collaborations.",
-        "tech_stack": ["Next.js", "TailwindCSS", "TypeScript", "Stripe", "Vercel"],
-        "status": "active",
-        "more_information": "A platform for creating and managing collaborations.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/fomoBlack.svg",
-        "link": "https://fomocollabs.app"
+        "icon": "/images/python.svg",
+        "link": "https://github.com/chirix33/WebScrapeInsight"
       },
       {
         "name": "ACM Illinois Tech Website",
@@ -49,46 +39,6 @@
         "full_picture": "src/data/images/recipeshare.ico",
         "icon": "/images/recipeshare.ico",
         "link": "https://recipe-share-app.vercel.app/"
-      },
-      {
-        "name": "Voting Web App",
-        "description": "Vote & Manage elections. Reports are generated.",
-        "tech_stack": ["HTML", "Bootstrap", "JavaScript", "jQuery", "FPDF", "PHP"],
-        "status": "completed",
-        "more_information": "A web app for managing elections, allowing users to vote and generate result reports.",
-        "full_picture": "src/data/images/votingapp.jpg",
-        "icon": "/images/votingapp.jpg",
-        "link": "http://voting.byethost33.com/"
-      },
-      {
-        "name": "Knowords",
-        "description": "English Lexical App",
-        "tech_stack": ["CSS", "EJS", "JavaScript", "jQuery", "Axios", "Node.js"],
-        "status": "completed",
-        "more_information": "An English lexical application that helps users improve their vocabulary through interactive learning.",
-        "full_picture": "src/data/images/knowords.jpg",
-        "icon": "/images/knowords.jpg",
-        "link": "https://knowords.onrender.com/"
-      },
-      {
-        "name": "WebScrapeInsight",
-        "description": "Tracks changes on web pages and extracts structured content from HTML and PDFs for retrieval pipelines.",
-        "tech_stack": ["Python", "NumPy", "Scrapy", "BeautifulSoup", "RAG", "PyMuPDF"],
-        "status": "completed",
-        "more_information": "A Python application that scrapes and extracts content from websites, and tracks changes over time. It uses RAG for summarization.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/python.svg",
-        "link": "https://github.com/chirix33/WebScrapeInsight"
-      },
-      {
-        "name": "Hospital Management System API",
-        "description": "A Rest API for a Hospital Management System.",
-        "tech_stack": ["JavaScript", "Node.js", "TypeScript", "Prisma", "Netlify"],
-        "status": "completed",
-        "more_information": "A Rest API for a Hospital Management System. It provides endpoints for managing patients, doctors, and appointments.",
-        "full_picture": "src/data/images/perfume.png",
-        "icon": "/images/default.svg",
-        "link": "https://github.com/chirix33/hospital_mgt_api"
       }
     ]
 }  
