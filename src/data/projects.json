@@ -1,6 +1,26 @@
 {
     "projects": [
       {
+        "name": "RegBridge",
+        "description": "Live demo of my RegBridge research paper. An LLM produces citation-bounded findings on FDA eCTD document reuse, and deterministic rules make the final decision.",
+        "tech_stack": ["React", "FastAPI", "Python", "LLMs", "Vercel"],
+        "status": "active",
+        "more_information": "Research demo for the RegBridge paper: inspectable AI-assisted decisions for regulatory document reuse, backed by 55 network-free integration tests.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "/images/default.svg",
+        "link": "https://regbridge-web.vercel.app"
+      },
+      {
+        "name": "SimPhysQA",
+        "description": "Code for my SimPhysQA research dataset: timestamp-level language annotations of physics simulations, with every sentence bound to simulator fields and validated.",
+        "tech_stack": ["Python", "MuJoCo", "PyBullet", "Local LLMs"],
+        "status": "active",
+        "more_information": "Evidence-bound language annotation of MuJoCo/PyBullet trajectories across four domains, used to benchmark local LLM configurations on readout, prediction and counterfactual questions.",
+        "full_picture": "src/data/images/perfume.png",
+        "icon": "/images/default.svg",
+        "link": "https://github.com/chirix33/simphyqa"
+      },
+      {
         "name": "WebScrapeInsight",
         "description": "Tracks changes on web pages and extracts structured content from HTML and PDFs for retrieval pipelines.",
         "tech_stack": ["Python", "NumPy", "Scrapy", "BeautifulSoup", "RAG", "PyMuPDF"],
