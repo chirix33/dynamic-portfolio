@@ -9,12 +9,11 @@ Each role has an empty `bullets: []` array. The card shows a bulleted list as so
 - [ ] **AIFP**: the model or pipeline you built, the data scale, and a metric. If RegBridge came out of this work, say so.
 - [ ] **Lumena Energy**: the system you built, the stack, and the impact.
 - [ ] **ACM Illinois Tech**: the site you maintain, the number of users or members, and the CI/deploy setup.
-- [ ] **Current research assistant position** (University of Alabama): add a new entry at the top with `company`, `position`, `start_date`, `end_date` (e.g. "Present") and `bullets`.
+- [ ] **University of Alabama (Research Assistant)**: what you work on.
 
 ## Research (`src/data/research.json`)
 
-- [ ] **RegBridge venue or preprint status**: append it to the RegBridge `description` (SimPhysQA already says "Under review.").
-- [ ] **RegBridge code or demo link**: add it once one exists. RegBridge can then become a featured project too (see Projects below).
+- [ ] **RegBridge venue or preprint status**: append it to the RegBridge `description`.
 - [ ] **One-paragraph research statement**, e.g. "I'm interested in grounding LLM outputs in verifiable evidence". This needs a small new field and a line in `src/components/Research.jsx` above the paper cards.
 - [ ] **Google Scholar / ORCID / arXiv links**: these go next to LinkedIn and GitHub in `src/components/Footer.jsx`, which uses the same link-plus-arrow pattern.
 
@@ -28,8 +27,7 @@ Only skills named in the review doc or already on the site are listed. Add these
 
 ## Projects (`src/data/projects.json`)
 
-- [ ] **RegBridge demo**: there's no code or demo link in the repo. Once there is one, add an entry with `"featured": true` (needs `name`, `description`, `tech_stack`, `status`, `icon`, `link`).
-- [ ] **Contractor CRM**: deployment/CI detail, and users or scale. Append to its `description`.
+- [ ] **RegBridge and SimPhysQA rows**: both use the generic `/images/default.svg` icon and `"status": "active"`. Swap in a logo and the right status if you have them.
 - [ ] **WebScrapeInsight**: the vector store or embedding model used (add to `tech_stack`), and the outcome (append to `description`).
 
 ## "How I build" (`src/data/research.json` → `how_i_build`)
@@ -42,8 +40,7 @@ Only skills named in the review doc or already on the site are listed. Add these
 
 ## Flagged, not changed (your call)
 
-- [ ] **Contractor CRM link** (`projects.json`) opens an AWS Cognito login screen, which is a dead end for visitors. Link a demo, screenshots or a short video instead.
-- [ ] **Voting Web App link** is plain `http://` on free hosting. Fix it or drop it.
+- [ ] **SimPhysQA GitHub link** (`https://github.com/chirix33/simphyqa`) returned 404 when checked on 2026-10-16, which usually means the repo is private or doesn't exist yet. Make it public or the row's link is a dead end.
 - [ ] **Pokébook** is on a random Netlify subdomain (`funny-baklava-823a63`). Rename it in Netlify, then update `link`.
 - [ ] **Contact email** (`src/data/email.json`) is still the Gmail address. The review suggests your university email.
 - [ ] **SimPhysQA PDF** (`public/papers/2.pdf`) is an anonymous submission. Check the venue's anonymity policy before keeping it public next to your name.
