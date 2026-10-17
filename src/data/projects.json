@@ -14,7 +14,7 @@
         "name": "ACM Illinois Tech Website",
         "description": "Main Website of ACM of Illinois Institute of Technology.",
         "tech_stack": ["Next.js", "TailwindCSS", "TypeScript", "HTML", "Vercel", "Shadcn", "GitHub"],
-        "status": "active",
+        "status": "completed",
         "more_information": "The main website of ACM Illinois Tech, featuring information about the organization, events, and resources.",
         "full_picture": "src/data/images/perfume.png",
         "icon": "/images/acm_iit_logo.png",
