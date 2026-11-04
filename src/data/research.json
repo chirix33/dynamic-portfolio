@@ -6,7 +6,7 @@
       "link": "papers/1.pdf"
     },
     {
-      "title": "SimPhysQA: Evidence-Bound Language Annotation of Physical Simulations for Grounded Scientific Question Answering",
+      "title": "SimPhysQA",
       "description": "A language-annotation resource for physics simulations in four domains. An LLM writes timestamp-level descriptions bound to simulator fields, and validators check them. Three reviewers judged 83-100% of 140 audit packets acceptable. Across nine local LLM configurations, success reached 92.5% on direct readout but at most 12.5% on prediction and 35.0% on counterfactuals.",
       "link": "papers/2.pdf"
     }
