@@ -1,6 +1,11 @@
 {
   "papers": [
     {
+      "title": "Compile Once, Query Many: Reusable Executable Models for Process-Record Question Answering",
+      "description": "OTF-Tools turns process records (logs, tickets, lab notes) into reusable code: it extracts the records, writes a simulator, and checks that it reproduces recorded outcomes before reuse. Across 3,066 questions and seven baselines it sits on the accuracy-cost Pareto frontier in all 14 settings, e.g. 74.9% at 8.1k tokens per question vs. 76.7% at 33.7k for PageIndex. Under review.",
+      "link": "papers/3.pdf"
+    },
+    {
       "title": "RegBridge: Inspectable AI-Assisted Decisions for Regulatory Document Reuse",
       "description": "A prototype for reviewing FDA eCTD document reuse. An LLM produces citation-bounded findings, and deterministic rules make the final decision. On 12 held-out cases it was correct 11 times in each of 3 runs with no unsafe reuse, versus 83% accuracy for a rules-only baseline (2 unsafe reuses). React/FastAPI demo with 55 network-free integration tests.",
       "link": "papers/1.pdf"
